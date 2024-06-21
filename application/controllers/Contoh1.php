@@ -1,10 +1,9 @@
 <?php
-class contoh1 extends CI_Controller
+class Contoh1 extends CI_Controller
 {
     public function index()
     {
-        echo "<h1> Perkenalkan Semua</h1>";
-        echo" Nama saya Rangga Ryantico, Saya tinggal di Bekasi, Olahraga yang saya gemari adalah Badminton seru";
+        echo "<h1>Perkenalkan</h1>";
+        echo "Nama saya Saifulloh Yusuf Saya tinggal di daerah Bekasi olahraga yang saya sukai adalah Bulutangkis";
     }
 }
-?>

@@ -1,23 +1,26 @@
 <?php
-defined('BASEPATH') or exit ('no direct script access allowed');
+defined('BASEPATH') or exit('nodirectscriptaccessallowed');
 
-class web extends CI_Controller{
-    function __construct(){
+
+class Web extends CI_Controller
+{
+    function __construct()
+    {
         parent::__construct();
         $this->load->helper('url');
     }
-
-    public function index(){
-        $data['judul'] = "Halaman Depan";
-        $this->load->view('v_header',$data);
-        $this->load->view('v_index',$data);
-        $this->load->view('v_footer',$data);
+    public function index()
+    {
+        $data['judul'] = "HalamanDepan";
+        $this->load->view('v_header', $data);
+        $this->load->view('v_index', $data);
+        $this->load->view('v_footer', $data);
     }
-    
-    public function about(){
+    public function about()
+    {
         $data['judul'] = "Halaman About";
-        $this->load->view('v_header',$data);
-        $this->load->view('v_about',$data);
-        $this->load->view('v_footer',$data);
+        $this->load->view('v_header', $data);
+        $this->load->view('v_about', $data);
+        $this->load->view('v_footer', $data);
     }
 }
